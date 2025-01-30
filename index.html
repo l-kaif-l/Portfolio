@@ -199,17 +199,27 @@
 
     <section id="projects" class="projects">
         <h2>Projects</h2>
+        
+
         <div class="projects-container">
+            <div class="project-box" data-modal="modalSatellite">
+                <h3>A Comprehensive Evaluation of Advanced Architectures for Satellite Image Classification</h3>
+                <ul>
+                    <li>Analyzed various Transformer and Neural Network models.</li>
+                    <li>Achieved 96.2% accuracy using ReXNet-50 and F1-Score of 95.5% with ensemble models.</li>
+                </ul>
+            </div>
+            
             <div class="project-box" data-modal="modal1">
                 <h3>Enhancing EEG Analysis for Rapid Brain Activities Detection</h3>
                 <ul>
-                    <li>Developed an EEG classification system using CatBoost, CNN-LSTM, and EfficientNet.</li>
-                    <li>Achieved a classification accuracy of 89.2% with CatBoost and 92.6% with CNN-LSTM.</li>
+                    <li>Implemented CatBoost, CNN-LSTM, and EfficientNet.</li>
+                    <li>Accuracy of 89.2% with CatBoost and 92.6% with CNN-LSTM.</li>
                 </ul>
             </div>
             <!-- Project 1 -->
             <div class="project-box" data-modal="modal2">
-                <h3>Enhancing Breast Cancer Diagnosis</h3>
+                <h3>Enhancing Breast Cancer Diagnosis with DL-Based Image Classification</h3>
                 <ul>
                     <li>Used VGG-16, DenseNet, and U-Net.</li>
                     <li>Reduced error rate by 25%.</li>
@@ -217,7 +227,7 @@
             </div>
             <!-- Project 2 -->
             <div class="project-box" data-modal="modal3">
-                <h3>Sentiment Analysis for Nifty 50</h3>
+                <h3>Sentiment-Driven Predictive Models for Nifty 50 Stock Market Fluctuations</h3>
                 <ul>
                     <li>Performed semantic analysis on stock data.</li>
                     <li>Achieved RMSE of 4.9 with LSTM.</li>
@@ -225,7 +235,7 @@
             </div>
             <!-- Project 3 -->
             <div class="project-box" data-modal="modal4">
-                <h3>Data Mining Models for COVID-19</h3>
+                <h3>Data Mining Models For COVID-19 Open Research Data-set</h3>
                 <ul>
                     <li>Analyzed the CORD-19 dataset using clustering and NER.</li>
                     <li>Developed a visualization tool for mapping research papers.</li>
@@ -233,7 +243,7 @@
             </div>
             <!-- Project 4 -->
             <div class="project-box" data-modal="modal5">
-                <h3>Allen Telescope Data Classification</h3>
+                <h3>Deep-learning Models to Classify Allen Telescope Data</h3>
                 <ul>
                     <li>Processed SETI signals into spectrograms using CNN models.</li>
                     <li>Achieved a classification accuracy of 91.44%.</li>
@@ -241,7 +251,7 @@
             </div>
             <!-- Project 5 -->
             <div class="project-box" data-modal="modal6">
-                <h3>Drug Cardiotoxicity Analysis</h3>
+                <h3>Drug Cardiotoxicity Analysis By Utilising Graph Neural Networks</h3>
                 <ul>
                     <li>Developed a GNN-based model for over 9,000 compounds.</li>
                     <li>Predicted cardiotoxicity with 90.60% accuracy.</li>
@@ -249,7 +259,7 @@
             </div>
             <!-- Project 6 -->
             <div class="project-box" data-modal="modal7">
-                <h3>Alzheimer’s Detection</h3>
+                <h3>Alzheimer’s Detection using Deep Neural Networks</h3>
                 <ul>
                     <li>Implemented CNN and RNN models to classify Alzheimer’s stages.</li>
                     <li>Achieved an accuracy of 93.22%.</li>
@@ -259,13 +269,14 @@
     </section>
     
     <!-- Modals for Projects -->
-    <div id="modal1" class="modal">
-    <div class="modal-content">
-        <span class="close">&times;</span>
-            <h3>Enhancing EEG Analysis for Rapid Brain Activities Detection</h3>
-            <p>Developed a machine learning-based EEG classification system for detecting neurological abnormalities. 
-               Used CatBoost, CNN-LSTM, and EfficientNet models on 11,000 EEG spectrograms. The system achieved a KL-divergence 
-               score of 0.78 with CatBoost and an accuracy of 92.6% with CNN-LSTM.</p>
+    <div id="modalSatellite" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>A Comprehensive Evaluation of Advanced Architectures for Satellite Image Classification</h3>
+            <p>This study evaluates state-of-the-art deep learning models for satellite image classification. Techniques such as 
+                transfer learning with ResNet-9 and DenseNet, ensemble models, and transformers like Vision Transformer and Swin Transformer 
+                were utilized. Among the models, ReXNet-50 achieved 96.2% accuracy, while ensemble models demonstrated exceptional robustness 
+                with an F1-Score of 95.5%.</p>
             <div class="modal-icons">
                 <a href="https://github.com/your-repo-url" target="_blank" title="GitHub Repository">
                     <i class='bx bxl-github'></i>
@@ -276,12 +287,35 @@
             </div>
         </div>
     </div>
+
+    <div id="modal1" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+            <h3>Enhancing EEG Analysis for Rapid Brain Activities Detection</h3>
+            <p>Developed a machine learning-based EEG classification system for detecting neurological abnormalities. 
+               Used CatBoost, CNN-LSTM, and EfficientNet models on 11,000 EEG spectrograms. The system achieved a KL-divergence 
+               score of 0.78 with CatBoost and an accuracy of 92.6% with CNN-LSTM.</p>
+            <div class="modal-icons">
+                <a href="https://github.com/l-kaif-l/EEG_classification" target="_blank" title="GitHub Repository">
+                    <i class='bx bxl-github'></i>
+                </a>
+                <a href="https://github.com/l-kaif-l/EEG_classification/blob/main/EEG_Classification%20(1).pdf" target="_blank" title="Documentation">
+                    <i class='bx bxs-file-doc'></i>
+                </a>
+            </div>
+        </div>
+    </div>
     <!-- Modal 1 -->
     <div id="modal2" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
-            <h3>Enhancing Breast Cancer Diagnosis</h3>
-            <p>Used VGG-16, DenseNet, U-Net, and ensemble learning techniques to improve mammogram and histopathological image analysis. Reduced the error rate in breast cancer detection by 25%.</p>
+            <h3>Enhancing Breast Cancer Diagnosis with DL-Based Image Classification</h3>
+            <p>Employ deep learning to enhance mammogram and histopathological image analysis for more accurate breast cancer
+                diagnosis. Develop novel deep learning models fine-tuned on a large dataset, complemented by ensemble learning techniques
+                for improved classification performance. Significantly improve breast cancer diagnosis accuracy and efficiency, showcasing the transformative potential of AI
+                in healthcare. Introduce innovative deep learning models tailored for breast cancer diagnosis, emphasizing their potential impact
+                on women’s health. Utilize VGG-16, DenseNet, U-Net, Attention U-Net, and ensemble learning techniques, demonstrating the effectiveness of transfer learning and segmentation networks. Introduced 3 Ensemble models and 3 segmentation models, reducing the error in detecting and classifying Breast
+                Cancer by 25% in females.</p>
             <div class="modal-icons">
                 <a href="https://github.com/your-repo-url1" target="_blank" title="GitHub Repository">
                     <i class='bx bxl-github'></i>
@@ -296,8 +330,10 @@
     <div id="modal3" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
-            <h3>Sentiment Analysis for Nifty 50</h3>
-            <p>Conducted semantic and sentiment analysis on NIFTY-50 stock data to understand the impact of news on stock price movements. Implemented ARIMA, SARIMAX, LSTM, and XGBoost, achieving an RMSE of 4.9 with the LSTM model.</p>
+            <h3>Sentiment-Driven Predictive Models for Nifty 50 Stock Market Fluctuations </h3>
+            <p>
+                Utilized a comprehensive array of analytical and machine learning techniques to conduct semantic analysis of NIFTY50 stock data. Emphasized sentiment analysis to understand the impact of news and market sentiment on stock price movements.
+                Utilized time series forecasting techniques, achieving a Mean Squared Error (MSE) of 24.4 and Root Mean Squared Error (RMSE) of 4.9 with the LSTM model. Implemented various machine learning models such as ARIMA, SARIMAX, LSTM, and XGBoost.</p>
             <div class="modal-icons">
                 <a href="https://github.com/your-repo-url2" target="_blank" title="GitHub Repository">
                     <i class='bx bxl-github'></i>
@@ -312,8 +348,8 @@
     <div id="modal4" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
-            <h3>Data Mining Models for COVID-19</h3>
-            <p>Analyzed the CORD-19 dataset using clustering and Named Entity Recognition (NER) techniques. Developed a visualization tool to map relevant research papers for scientists and healthcare professionals.</p>
+            <h3>Data Mining Models For COVID-19 Open Research Data-set </h3>
+            <p>Analyzed the CORD-19 dataset using clustering and Named Entity Recognition (NER) techniques. Developed a visualization tool to map relevant research papers for scientists and healthcare professionals. Demonstrated efficient clustering and labeling methods, enabling the mapping of papers based on latent interrelationships in the text.</p>
             <div class="modal-icons">
                 <a href="https://github.com/your-repo-url3" target="_blank" title="GitHub Repository">
                     <i class='bx bxl-github'></i>
@@ -328,8 +364,8 @@
     <div id="modal5" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
-            <h3>Allen Telescope Data Classification</h3>
-            <p>Processed SETI signals into spectrograms and implemented CNN models to classify signals. Achieved a classification accuracy of 91.44%.</p>
+            <h3>Deep-learning Models to Classify Allen Telescope Data</h3>
+            <p>Extracted raw data from SETI, transforming signals into visual spectrograms. Employed various CNN models, ensemble models, hybrids, and machine learning classifiers to enhance image classification accuracy for 8 distinct signal types (Bright Pixel, Squiggle, Narrowband, Narrowbanded, Square pulse narrowband, Squiggle square pulse narrowband, and Noise). Achieved a noteworthy 91.44 % accuracy and conducted a comprehensive performance comparison between the hybrid model and previous base models.</p>
             <div class="modal-icons">
                 <a href="https://github.com/your-repo-url4" target="_blank" title="GitHub Repository">
                     <i class='bx bxl-github'></i>
@@ -344,8 +380,13 @@
     <div id="modal6" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
-            <h3>Drug Cardiotoxicity Analysis</h3>
-            <p>Developed a GNN-based model to analyze over 9,000 compounds. Predicted cardiotoxicity with a validation accuracy of 90.60%.</p>
+            <h3>Drug Cardiotoxicity Analysis By Utilising Graph Neural Networks</h3>
+            <p>Investigated cardiotoxicity induced by various sources, including chemotherapy drugs and illicit substances like
+                cocaine. Utilized machine learning and Graph Neural Networks (GNN) to analyze a dataset of over 9,000 compounds and
+                predict cardiotoxicity. Demonstrated the effectiveness of GNN in binary classification of molecules as toxic or non-toxic, with varying
+                accuracies based on model architecture. Evaluated model performance using metrics such as R2 score, MAE, and RMSE, comparing results with traditional
+                machine learning models. Highlighted the potential of GNN for early-stage detection of cardiotoxicity and implications for drug development
+                and patient care. Implemented various architectures and achieved the best validation accuracy of 90.60 %</p>
             <div class="modal-icons">
                 <a href="https://github.com/your-repo-url5" target="_blank" title="GitHub Repository">
                     <i class='bx bxl-github'></i>
@@ -360,8 +401,8 @@
     <div id="modal7" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
-            <h3>Alzheimer’s Detection</h3>
-            <p>Implemented CNN and RNN models to classify Alzheimer’s stages. Achieved an accuracy of 93.22%.</p>
+            <h3>Alzheimer’s Detection using Deep Neural Networks</h3>
+            <p>• Executed three deep learning models (2-CNN & 1-RNN) and 1-SVM Classifier. Obtained an accuracy of 93.22 % in classifying different stages of Alzheimer’s (Mild Demented, Moderate Demented, Non Demented, Very Mild Demented).</p>
             <div class="modal-icons">
                 <a href="https://github.com/your-repo-url6" target="_blank" title="GitHub Repository">
                     <i class='bx bxl-github'></i>
